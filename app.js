@@ -1,30 +1,16 @@
 "use strict";
 
-// console.log(document.querySelector(".start").textContent)
-// console.log(document.querySelector(".check").textContent)
-
-// document.querySelector(".start").textContent = "correct Number !! "
-// document.querySelector(".head-icon").textContent = 18
-
-// document.querySelector(".guess").value = 18 ;
-
-// console.log(document.querySelector(".guess").value)
-
-//  console.log(document.querySelector(".between").textContent)
-
-let secretNumber = Math.trunc(Math.random() * 20 + 1);  /// 0 => 0.999999999999999999 
-
-////// refactoring ....  dry (d'ont repeat your self)
 
 
-//   document.querySelector('.head-icon').textContent = secretNumber
+let secretNumber = Math.trunc(Math.random() * 20 + 1);  
+
 
 let score = 20;
 document.querySelector(".score-result").textContent = score ;  
 // console.log(score);
 let highscore = 0;
 
-/// dry :  d'ont repeat your self
+
 
 const displayMessage = function (message){
   document.querySelector(".start").textContent = message ;
